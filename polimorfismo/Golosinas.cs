@@ -8,6 +8,11 @@ namespace polimorfismo
 {
     public class Golosinas : Almacen
     {
+        private List<Producto> _Golosinas;
+        public Golosinas()
+        {
+            _Golosinas = new List<Producto>();
+        }
         public override void addProducto(Producto producto)
         {
             throw new NotImplementedException();
