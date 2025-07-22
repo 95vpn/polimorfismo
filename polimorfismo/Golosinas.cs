@@ -15,12 +15,12 @@ namespace polimorfismo
         }
         public override void addProducto(Producto producto)
         {
-            throw new NotImplementedException();
+            _Golosinas.Add(producto);
         }
 
-        public override List<Productos> getProducto(string valor)
+        public override List<Producto> getProducto()
         {
-            throw new NotImplementedException();
+            return _Golosinas;
         }
     }
 }
