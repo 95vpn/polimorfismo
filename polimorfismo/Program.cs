@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace polimorfismo
 {
-    internal class Program
+    internal class Program : Menu
     {
         static void Main(string[] args)
         {
-            Almacen al = new Golosinas();
+            
+            new Program().golosinas();
         }
+
+        
     }
 }

@@ -26,6 +26,32 @@ namespace polimorfismo
                     {
                         Console.WriteLine("Cuantas golosinas va agregar?");
                         int cant = Convert.ToInt16(Console.ReadLine());
+                        for (int i = 0; i < cant; i++)
+                        {
+                            Console.WriteLine("Nueva golosinas");
+                            Console.WriteLine("Ingrese la id");
+                            var id = Console.ReadLine();
+                            Console.WriteLine("Ingrese el nombre");
+                            var nombre = Console.ReadLine();
+                            Console.WriteLine("Ingrese el precio");
+                            var precio = Convert.ToDouble(Console.ReadLine());
+                            g.addProducto(new Producto
+                            {
+                                ID = id,
+                                Nombre = nombre,
+                                Precio = precio
+                            }); 
+                        }
+                        Console.WriteLine("Desea ir al inicio s/n");
+                        des = Console.ReadLine();
+                        if (des.Equals("s"))
+                        {
+                            valor = true;
+                        }
+                        else
+                        {
+                            valor = false;
+                        }
                     }
                 }
 
