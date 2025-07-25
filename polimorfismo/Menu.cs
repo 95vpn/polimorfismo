@@ -53,6 +53,30 @@ namespace polimorfismo
                             valor = false;
                         }
                     }
+                    else
+                    {
+                        Console.WriteLine("Desea ir al inicio s/n");
+                        des = Console.ReadLine();
+                        if (des.Equals("s"))
+                        {
+                            Console.Clear();
+                            Console.WriteLine("vENTA DE GOLOSINAS Y FRUTAS");
+                        }
+                        else
+                        {
+                            valor = false;
+                        }
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Lista de golosinas");
+                    foreach (var item in g.getProducto())
+                    {
+                        Console.WriteLine($"Codigo {item.ID} Golosinas {item.Nombre} Precio {item.Precio}");
+                    }
+                    Console.WriteLine("Desea realizar ventas de golosinas? s/n");
+                    des = Console.ReadLine();
                 }
 
             }
