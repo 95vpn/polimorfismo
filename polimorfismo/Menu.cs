@@ -86,12 +86,35 @@ namespace polimorfismo
 
         public double solicitarPago()
         {
-            throw new NotImplementedException();
+            bool pagoCorrecto = false;
+            double res = 0;
+            while (!pagoCorrecto)
+            {
+                Console.WriteLine("Como desea pagar con: 10, 5");
+                res = double.Parse(Console.ReadLine());
+                if (res != 5 && res != 10)
+                {
+                    Console.WriteLine("Pago no valido");
+                }
+                else
+                {
+                    pagoCorrecto= true;
+                }
+            }
+            return res;
         }
 
         public void ventas()
         {
-            throw new NotImplementedException();
+            double total = 0;
+            string des = "";
+            do
+            {
+                Console.WriteLine("Ingrese el producto");
+                string producto = Console.ReadLine();
+                var productos = g.getProducto(producto);
+            }
+            while (true);
         }
     }
 }

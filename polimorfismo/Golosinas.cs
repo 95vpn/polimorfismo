@@ -18,7 +18,7 @@ namespace polimorfismo
             _Golosinas.Add(producto);
         }
 
-        public override List<Producto> getProducto()
+        public override List<Producto> getProducto(string producto)
         {
             return _Golosinas;
         }

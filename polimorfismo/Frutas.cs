@@ -13,7 +13,7 @@ namespace polimorfismo
             throw new NotImplementedException();
         }
 
-        public override List<Producto> getProducto()
+        public override List<Producto> getProducto(string producto)
         {
             throw new NotImplementedException();
         }
